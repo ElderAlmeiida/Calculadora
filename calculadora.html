@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <!--
+        Atividade de Progamação Web 
+        feito por: Elder Carlos Silva Almeida
+    -->
+    <div id="content">
+        <header id="titulo">
+        <img src="./img/calculadora .png" width="75" height="75" alt="" id="imgtitulo">   <h1 id="titulotxt">  Calculadora</h1>
+        </header> 
+        
+        <input type="text"  id="value_1" placeholder="Digite o primeiro valor" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        <input type="text" id="value_2" placeholder="Digite o segundo valor"    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        
+        
+        <div id="operacoes">
+        <button id="soma" onclick="soma()">+</button>
+        <button id="sub" onclick="subtrair()">-</button>
+        <button id="multi" onclick="multiplicar()">x</button>
+        <button id="divi" onclick="dividir()">/</button>       
+        </div>
+
+
+        <button id="limp" onclick="limpar()">Limpar</button>
+
+        <input type="text" id="result" placeholder="Resultado" disabled >
+        <script src="./script/calculadora.js"></script>
+        
+        <footer>
+            
+            <h3>Elder Carlos Silva Almeida 
+              </h3><p>Sistemas de Informação</p>
+            <h4 id="curse"> <img src="./img/Logo_UniFTC.png" width="100" height="50" alt="logoFTC" id="curse"> </h4>
+        </footer>
+
+    </div>
+</body>
+</html>
